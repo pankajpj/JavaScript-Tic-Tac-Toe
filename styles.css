@@ -33,25 +33,19 @@ body {
   cursor: pointer;
 }
 
-.cell:first-child,
-.cell:nth-child(2),
-.cell:nth-child(3) {
-  border-top: none;
+.cell:nth-child(3n + 1){
+    border-left: none;
+}
+.cell:nth-child(3n + 3){
+    border-right: none;
+}
+.cell:nth-child(n + 1){
+    border-top: none;
+}
+.cell:nth-child(n + 7){
+    border-bottom: none;
 }
 
-.cell:nth-child(3n + 1) {
-  border-left: none;
-}
-
-.cell:nth-child(3n + 3) {
-  border-right: none;
-}
-
-.cell:last-child,
-.cell:nth-child(8),
-.cell:nth-child(7) {
-  border-bottom: none;
-}
 
 .cell.x,
 .cell.circle {
